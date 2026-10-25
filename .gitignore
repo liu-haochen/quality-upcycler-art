@@ -1,0 +1,9 @@
+animation-frames/
+**/animation-frames/
+*.blend1
+*.blend2
+*.pid
+__pycache__/
+*.log
+*.err
+

@@ -1,0 +1,44 @@
+{
+  "frame_width": 320,
+  "frame_height": 320,
+  "scale": 0.5,
+  "frames": 32,
+  "line_length": 8,
+  "shift_pixels": [
+    4.0,
+    -2.75
+  ],
+  "visible_union": [
+    27,
+    53,
+    277,
+    278
+  ],
+  "visible_size_game_pixels": [
+    125.0,
+    112.5
+  ],
+  "idle_animation_speed": 0.12,
+  "working_animation_speed": 0.5,
+  "idle_state": "red indicators, all task lights and screens off",
+  "working_state": "mixed warm/cyan/green work lighting, additive glow layer in the same stack, pulsed amber chamber",
+  "shadow_alpha": 0.7,
+  "shadow_projection": {
+    "x_z": 1.15,
+    "y_z": 0.4
+  },
+  "palette": "premium blue-teal steel / silver-blue armour / brushed brass manipulators",
+  "ambient_fill": "world + right fill + overhead + lower-left front fill for readable side structure",
+  "glow_layer": "working_visualisation with draw_in_states=working and fadeout",
+  "visual_states": "idle is a static safe-pose hold; working state duration is 32 animation frames (one full cycle at animation_speed 0.50); glow/lights fade on inactive and the body completes the current state before returning to idle",
+  "glow_occlusion": "Cycles emission pass rendered with Holdout occluders on all non-glow geometry",
+  "working_lights": "warm amber primary working light + low-intensity green status accent, both fadeout=true",
+  "indicator_layout": "low-saturation teal-green industrial status matrix with extra metal grille ribs",
+  "bloom": "very tight two-radius bloom plus widely spaced modules to keep colours separate",
+  "flow_ring": "single comet, one accelerated full lap, normal->uncommon->rare->epic->legendary colour progression",
+  "quality_modules": "neutral metal housings with small low-saturation quality windows: uncommon green / rare blue / epic purple / legendary orange",
+  "arm_choreography": "each arm rides its own carriage on the circular rail with independent arcs and timings; elbow folds during travel and extends for press/shear at its station",
+  "table_motion": "small oscillating shear sweep",
+  "gpu_renderer": "Cycles OptiX on NVIDIA RTX 4060 Laptop GPU; state batches rendered as animation sequences",
+  "clearance_fixes": "front-left reduction gear moved 0.19 toward camera and scaled to 86% to clear service boxes and auxiliary motor"
+}
